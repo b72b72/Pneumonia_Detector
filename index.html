@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X-Ray Diagnosis Viewer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>X-Ray Pneumonia Classifier</h1>
+
+    <div class="upload-section">
+      <input type="file" id="xrayInput" accept="image/*" />
+      <button onclick="sendImage()">Upload & Diagnose</button>
+    </div>
+
+    <div class="image-display">
+      <img id="xrayImage" src="" alt="Uploaded X-ray" />
+      <canvas id="overlayCanvas"></canvas>
+    </div>
+
+    <div class="results">
+      <p><strong>Prediction:</strong> <span id="prediction">--</span></p>
+      <p><strong>Ground Truth:</strong> <span id="truth">--</span></p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
