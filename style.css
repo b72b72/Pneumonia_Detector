@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.image-display {
+  position: relative;
+  display: inline-block;
+}
+
+#xrayImage, #overlayCanvas {
+  max-width: 100%;
+  border: 1px solid #444;
+}
+
+#overlayCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 18px;
+}
