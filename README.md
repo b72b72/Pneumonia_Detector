@@ -99,9 +99,11 @@ python app.py
 Where the http location can be opened within your browser. An examplar is shown below: 
 
 No Finding:
+
 ![NoFinding](screenshots/x_ray_nofinding.png)
 
 Pneumonia Detected:
+
 ![Pneumonia](screenshots/x_ray_pneumonia.png)
 
 ## License
